@@ -1,16 +1,16 @@
-ï»¿namespace StringIO_TextView
+namespace StringIO_TextView
 {
     partial class Form1
     {
         /// <summary>
-        /// í•„ìˆ˜ ë””ìì´ë„ˆ ë³€ìˆ˜ì…ë‹ˆë‹¤.
+        /// ÇÊ¼ö µğÀÚÀÌ³Ê º¯¼öÀÔ´Ï´Ù.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// ì‚¬ìš© ì¤‘ì¸ ëª¨ë“  ë¦¬ì†ŒìŠ¤ë¥¼ ì •ë¦¬í•©ë‹ˆë‹¤.
+        /// »ç¿ë ÁßÀÎ ¸ğµç ¸®¼Ò½º¸¦ Á¤¸®ÇÕ´Ï´Ù.
         /// </summary>
-        /// <param name="disposing">ê´€ë¦¬ë˜ëŠ” ë¦¬ì†ŒìŠ¤ë¥¼ ì‚­ì œí•´ì•¼ í•˜ë©´ trueì´ê³ , ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ falseì…ë‹ˆë‹¤.</param>
+        /// <param name="disposing">°ü¸®µÇ´Â ¸®¼Ò½º¸¦ »èÁ¦ÇØ¾ß ÇÏ¸é trueÀÌ°í, ±×·¸Áö ¾ÊÀ¸¸é falseÀÔ´Ï´Ù.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form ë””ìì´ë„ˆì—ì„œ ìƒì„±í•œ ì½”ë“œ
+        #region Windows Form µğÀÚÀÌ³Ê¿¡¼­ »ı¼ºÇÑ ÄÚµå
 
         /// <summary>
-        /// ë””ìì´ë„ˆ ì§€ì›ì— í•„ìš”í•œ ë©”ì„œë“œì…ë‹ˆë‹¤. 
-        /// ì´ ë©”ì„œë“œì˜ ë‚´ìš©ì„ ì½”ë“œ í¸ì§‘ê¸°ë¡œ ìˆ˜ì •í•˜ì§€ ë§ˆì„¸ìš”.
+        /// µğÀÚÀÌ³Ê Áö¿ø¿¡ ÇÊ¿äÇÑ ¸Ş¼­µåÀÔ´Ï´Ù. 
+        /// ÀÌ ¸Ş¼­µåÀÇ ³»¿ëÀ» ÄÚµå ÆíÁı±â·Î ¼öÁ¤ÇÏÁö ¸¶¼¼¿ä.
         /// </summary>
         private void InitializeComponent()
         {
@@ -39,6 +39,7 @@
             this.txtEdit.Name = "txtEdit";
             this.txtEdit.Size = new System.Drawing.Size(556, 21);
             this.txtEdit.TabIndex = 0;
+            this.txtEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdit_KeyPress);
             // 
             // btnEdit
             // 
@@ -47,19 +48,19 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(556, 139);
             this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "ì…ë ¥";
+            this.btnEdit.Text = "ÀÔ·Â";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("ê¶ì„œì²´", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Font = new System.Drawing.Font("±Ã¼­Ã¼", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResult.Location = new System.Drawing.Point(13, 226);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(79, 19);
             this.lblResult.TabIndex = 2;
-            this.lblResult.Text = "ê²°ê³¼ : ";
+            this.lblResult.Text = "°á°ú : ";
             // 
             // Form1
             // 
@@ -71,7 +72,7 @@
             this.Controls.Add(this.txtEdit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "ë¬¸ì ì…ì¶œë ¥";
+            this.Text = "¹®ÀÚ ÀÔÃâ·Â";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -85,4 +86,3 @@
         private System.Windows.Forms.Label lblResult;
     }
 }
-
